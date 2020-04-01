@@ -1,0 +1,29 @@
+.slick-dots {
+  position: relative;
+  bottom: auto;
+
+  li {
+    button {
+      &::before {
+        color: $primary;
+      }
+    }
+
+    &.slick-active {
+      button {
+        &::before {
+          content: "■";
+          color: $primary;
+          line-height: 1.8;
+        }
+      }
+    }
+  }
+}
+
+.information-slide {
+  .slick-slide {
+    box-sizing: border-box;
+    padding: 0 $font-size-base;
+  }
+}

@@ -1,6 +1,23 @@
 body {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Barlow", "Noto Sans JP", sans-serif;
   line-height: 1.7;
   white-space: normal;
   word-break: break-all;
+}
+
+.sec {
+  padding: $font-size-base * 3 0;
+}
+
+.ttl2 {
+  margin-bottom: $font-size-base * 1.5;
+
+  .en {
+    font-size: $font-size-base * 1.8;
+    margin-right: $font-size-base * 0.875;
+  }
+
+  span:not(.en) {
+    font-size: $font-size-base * 0.875;
+  }
 }

@@ -32,22 +32,47 @@
     background: url("../images_min/mv_bg.png") no-repeat center center;
     background-size: cover;
 
-    .price {
-      p {
-        box-sizing: border-box;
-        padding: $font-size-base * 0.875 $font-size-base;
+    form {
+      width: 40%;
 
-        span {
-          display: inline-block;
-          vertical-align: sub;
-          box-sizing: border-box;
-          margin: 0 $font-size-base * 0.5;
-          padding: $font-size-base * 0.3;
-          border-top: solid 1px $primary;
-          font-size: $font-size-base * 1.5;
-          line-height: 1;
-          letter-spacing: .1em;
+      .form-inner {
+        border-bottom: solid 3px $primary;
+
+        .price {
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -$font-size-base * 0.875;
+            border: $font-size-base * 0.875 solid transparent;
+            border-top: $font-size-base * 0.875 solid $secondary;
+          }
+
+          p {
+            box-sizing: border-box;
+            padding: $font-size-base * 0.875 $font-size-base;
+
+            span {
+              display: inline-block;
+              vertical-align: sub;
+              box-sizing: border-box;
+              margin: 0 $font-size-base * 0.5;
+              padding: $font-size-base * 0.3;
+              border-top: solid 1px $primary;
+              font-size: $font-size-base * 1.5;
+              line-height: 1;
+              letter-spacing: 0.1em;
+            }
+          }
         }
+      }
+
+      &+div {
+        width: 60%;
+        padding-top: $font-size-base;
       }
     }
   }
