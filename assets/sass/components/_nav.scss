@@ -1,0 +1,54 @@
+.global-nav {
+  position: relative;
+  background-color: $dark;
+
+  .global-menu {
+    list-style: none;
+    color: $white;
+
+    li {
+      cursor: pointer;
+      display: block;
+      width: 25%;
+      box-sizing: border-box;
+      padding: $font-size-base;
+      text-align: center;
+
+      &.active {
+        background-color: $primary;
+        border-top-right-radius: $font-size-base * 0.5;
+        border-top-left-radius: $font-size-base * 0.5;
+        margin-top: -$font-size-base * 0.5;
+        padding: $font-size-base * 1.25 0;
+      }
+
+      a {
+        color: $white;
+      }
+    }
+  }
+
+  .form {
+    background: url("../images_min/mv_bg.png") no-repeat center center;
+    background-size: cover;
+
+    .price {
+      p {
+        box-sizing: border-box;
+        padding: $font-size-base * 0.875 $font-size-base;
+
+        span {
+          display: inline-block;
+          vertical-align: sub;
+          box-sizing: border-box;
+          margin: 0 $font-size-base * 0.5;
+          padding: $font-size-base * 0.3;
+          border-top: solid 1px $primary;
+          font-size: $font-size-base * 1.5;
+          line-height: 1;
+          letter-spacing: .1em;
+        }
+      }
+    }
+  }
+}
