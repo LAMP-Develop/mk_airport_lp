@@ -21,3 +21,24 @@ body {
     font-size: $font-size-base * 0.875;
   }
 }
+
+.ttl3 {
+  position: relative;
+  font-size: $font-size-base;
+  font-weight: bold;
+
+  span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: $font-size-base;
+    border-top: $font-size-base solid transparent;
+    border-bottom: $font-size-base solid transparent;
+    border-left: $font-size-base solid $primary;
+  }
+}

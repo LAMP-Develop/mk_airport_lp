@@ -12,7 +12,7 @@ $(function($) {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    centerMode: true,
-    centerPadding: '40px',
+    prevArrow: '<span class="prev-arrow"></span>',
+    nextArrow: '<span class="next-arrow"></span>'
   });
 });

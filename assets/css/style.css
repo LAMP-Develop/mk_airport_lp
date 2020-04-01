@@ -7364,6 +7364,22 @@ body {
   .ttl2 span:not(.en) {
     font-size: 0.875rem; }
 
+.ttl3 {
+  position: relative;
+  font-size: 1rem;
+  font-weight: bold; }
+  .ttl3 span {
+    display: inline-block;
+    vertical-align: middle; }
+  .ttl3::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1rem;
+    border-top: 1rem solid transparent;
+    border-bottom: 1rem solid transparent;
+    border-left: 1rem solid #154B97; }
+
 .header {
   position: relative;
   padding: 1rem 0 1.25rem 0; }
@@ -7433,17 +7449,81 @@ body {
         width: 60%;
         padding-top: 1rem; }
 
-.slick-dots {
-  position: relative;
-  bottom: auto; }
-  .slick-dots li button::before {
-    color: #154B97; }
-  .slick-dots li.slick-active button::before {
-    content: "■";
-    color: #154B97;
-    line-height: 1.8; }
+.slick-dots li button::before {
+  color: #154B97; }
 
-.information-slide .slick-slide {
-  box-sizing: border-box;
+.slick-dots li.slick-active button::before {
+  content: "■";
+  color: #154B97;
+  line-height: 1.8; }
+
+.information-slide {
+  margin-bottom: 0 !important; }
+  .information-slide .slick-slide {
+    box-sizing: border-box;
+    padding: 0 1rem;
+    font-size: 0; }
+  .information-slide .slick-dots {
+    bottom: -4rem; }
+  .information-slide .prev-arrow::before,
+  .information-slide .next-arrow::before {
+    content: "";
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border-top: solid 2px #154B97;
+    border-right: solid 2px #154B97; }
+  .information-slide .prev-arrow {
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: -2rem;
+    transform: rotate(-135deg) translateY(-50%);
+    margin-top: -1rem; }
+  .information-slide .next-arrow {
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: -2rem;
+    transform: rotate(45deg) translateY(-50%);
+    margin-top: -0.5rem; }
+
+.about-menu {
+  margin-bottom: 2rem; }
+  .about-menu a {
+    display: block;
+    width: calc(100% / 6);
+    box-sizing: border-box;
+    padding: 1em;
+    border: solid 1px #fff;
+    font-size: 0.875rem;
+    line-height: 1; }
+
+.about-inner {
+  margin-bottom: 2rem; }
+  .about-inner:last-of-type {
+    margin-bottom: 0; }
+  .about-inner .content,
+  .about-inner .ttl {
+    box-sizing: border-box;
+    padding: 1rem 1.5rem; }
+
+.flow-list .card {
+  height: 100%; }
+  .flow-list .card h4 {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 1em; }
+  .flow-list .card p {
+    font-size: 0.875rem; }
+
+.prices .txt {
+  width: 60%;
   padding: 0 1rem; }
+
+.prices .img {
+  text-align: center;
+  width: 40%; }
 

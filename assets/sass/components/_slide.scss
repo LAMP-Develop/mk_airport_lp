@@ -1,7 +1,4 @@
 .slick-dots {
-  position: relative;
-  bottom: auto;
-
   li {
     button {
       &::before {
@@ -22,8 +19,45 @@
 }
 
 .information-slide {
+  margin-bottom: 0 !important;
+
   .slick-slide {
     box-sizing: border-box;
     padding: 0 $font-size-base;
+    font-size: 0;
+  }
+
+  .slick-dots {
+    bottom: -$font-size-base * 4;
+  }
+
+  .prev-arrow::before,
+  .next-arrow::before {
+    content: "";
+    display: block;
+    width: $font-size-base;
+    height: $font-size-base;
+    border-top: solid 2px $primary;
+    border-right: solid 2px $primary;
+  }
+
+  .prev-arrow {
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: -$font-size-base * 2;
+    transform: rotate(-135deg) translateY(-50%);
+    margin-top: -$font-size-base;
+  }
+
+  .next-arrow {
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: -$font-size-base * 2;
+    transform: rotate(45deg) translateY(-50%);
+    margin-top: -$font-size-base * 0.5;
   }
 }
