@@ -52,3 +52,26 @@
     width: 40%;
   }
 }
+
+.cars {
+  .card {
+    height: 100%;
+
+    h4 {
+      font-size: $font-size-base;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: $font-size-base * 0.75;
+      color: #707070;
+    }
+  }
+}
+
+.attentions {
+  h4 {
+    font-size: $font-size-base;
+    font-weight: bold;
+  }
+}

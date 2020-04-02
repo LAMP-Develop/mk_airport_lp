@@ -7353,6 +7353,9 @@ body {
   white-space: normal;
   word-break: break-all; }
 
+p {
+  font-size: 0.875rem; }
+
 .sec {
   padding: 3rem 0; }
 
@@ -7379,6 +7382,14 @@ body {
     border-top: 1rem solid transparent;
     border-bottom: 1rem solid transparent;
     border-left: 1rem solid #154B97; }
+
+.ttl4 {
+  font-size: 1.025rem;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding-left: .5em;
+  margin-bottom: 1em;
+  border-left: solid 3px #154B97; }
 
 .header {
   position: relative;
@@ -7526,4 +7537,54 @@ body {
 .prices .img {
   text-align: center;
   width: 40%; }
+
+.cars .card {
+  height: 100%; }
+  .cars .card h4 {
+    font-size: 1rem;
+    font-weight: bold; }
+  .cars .card p {
+    font-size: 0.75rem;
+    color: #707070; }
+
+.attentions h4 {
+  font-size: 1rem;
+  font-weight: bold; }
+
+.cta {
+  position: relative;
+  padding: 2rem 0 0;
+  background-image: url("../images_min/apply_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .cta .cta-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; }
+    .cta .cta-wrap .img {
+      width: 40%;
+      text-align: center; }
+    .cta .cta-wrap .txt {
+      width: 60%;
+      color: #fff; }
+      .cta .cta-wrap .txt h2 {
+        font-size: 1.75rem;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        text-shadow: 0 0 0.5rem #221816;
+        margin-bottom: 0.5rem; }
+      .cta .cta-wrap .txt p {
+        font-size: 1rem;
+        text-shadow: 0 0 0.5rem #221816;
+        margin-bottom: 2rem; }
+      .cta .cta-wrap .txt .btns {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap; }
+        .cta .cta-wrap .txt .btns a {
+          display: block;
+          margin: 0 1rem; }
 

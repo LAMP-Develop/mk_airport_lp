@@ -1,0 +1,51 @@
+.cta {
+  position: relative;
+  padding: $font-size-base * 2 0 0;
+  background-image: url("../images_min/apply_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .cta-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    .img {
+      width: 40%;
+      text-align: center;
+    }
+
+    .txt {
+      width: 60%;
+      color: $white;
+
+      h2 {
+        font-size: $font-size-base * 1.75;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        text-shadow: 0 0 $font-size-base * 0.5 $dark;
+        margin-bottom: $font-size-base * 0.5;
+      }
+
+      p {
+        font-size: $font-size-base;
+        text-shadow: 0 0 $font-size-base * 0.5 $dark;
+        margin-bottom: $font-size-base * 2;
+      }
+
+      .btns {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        a {
+          display: block;
+          margin: 0 $font-size-base;
+        }
+      }
+    }
+  }
+}
