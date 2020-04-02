@@ -1,0 +1,42 @@
+.footer {
+  .main-foot {
+    & > div {
+      box-sizing: border-box;
+      padding: $font-size-base * 3 0;
+    }
+
+    .foot-links {
+      h3 {
+        font-size: $font-size-base;
+        font-weight: bold;
+        margin-bottom: 1em;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+          a {
+            font-size: $font-size-base * 0.875;
+            color: $white;
+          }
+        }
+      }
+
+      .mr-md-5 {
+        ul {
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          flex-wrap: wrap;
+
+          li {
+            width: 33.333%;
+          }
+        }
+      }
+    }
+  }
+}
