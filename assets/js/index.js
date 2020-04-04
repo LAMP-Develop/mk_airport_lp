@@ -6,13 +6,42 @@ import 'bootstrap';
 import 'slick-carousel';
 import 'lightbox2';
 
-$(function($) {
+FontAwesomeConfig = {
+  searchPseudoElements: true
+};
+import '@fortawesome/fontawesome-free/js/all.js';
+
+$(function ($) {
   $('.information-slide').slick({
     dots: true,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     prevArrow: '<span class="prev-arrow"></span>',
-    nextArrow: '<span class="next-arrow"></span>'
+    nextArrow: '<span class="next-arrow"></span>',
+    responsive: [{
+      breakpoint: 991.98,  //ブレイクポイントを指定
+      settings: {
+        slidesToShow: 1,
+      }
+    }]
   });
+});
+
+$(window).on('load resize', function () {
+  let width = $(window).width();
+  let border = 991.98;
+  if (width < border) { // sp
+    $('.toggle-img').each(function () {
+      $(this).attr('src', $(this).attr('src').replace('_pc', '_sp'));
+    });
+    $('.meter-taxi, .sightseeing').attr('data-toggle', 'modal');
+    $('.meter-taxi').attr('data-target', '#modal-meter-taxi');
+    $('.sightseeing').attr('data-target', '#modal-sightseeing');
+  } else { // pc
+    $('.toggle-img').each(function () {
+      $(this).attr('src', $(this).attr('src').replace('_sp', '_pc'));
+    });
+    $('.meter-taxi, .sightseeing').removeAttr('data-toggle data-target');
+  }
 });

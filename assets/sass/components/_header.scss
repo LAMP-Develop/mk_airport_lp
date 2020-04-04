@@ -1,20 +1,50 @@
 .header {
   position: relative;
   padding: $font-size-base 0 $font-size-base * 1.25 0;
+  @include media-breakpoint-down(md) {
+    padding: $font-size-base * 0.875 0;
+  }
 
   h1 {
     font-size: 0;
 
-    img {
+    & > img {
       display: inline-block;
       vertical-align: middle;
+      margin-right: $font-size-base;
+      @include media-breakpoint-down(md) {
+        max-width: 50px;
+      }
     }
 
-    .badge {
+    div {
       display: inline-block;
       vertical-align: middle;
-      font-size: $font-size-base * 1.5;
-      margin-left: $font-size-base;
+      margin-right: $font-size-base;
+      @include media-breakpoint-down(md) {
+        margin-right: 0;
+      }
+
+      img {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: $font-size-base;
+        @include media-breakpoint-down(md) {
+          display: block;
+          margin-right: 0;
+          margin-bottom: 5px;
+          max-width: 35vw;
+        }
+      }
+
+      .badge {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: $font-size-base * 1.5;
+        @include media-breakpoint-down(md) {
+          font-size: $font-size-base * 0.875;
+        }
+      }
     }
   }
 }

@@ -11,15 +11,27 @@
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
+    @include media-breakpoint-down(md) {
+      flex-wrap: wrap;
+      flex-flow: column-reverse;
+    }
 
     .img {
       width: 40%;
       text-align: center;
+      @include media-breakpoint-down(md) {
+        width: 100%;
+        margin-top: 2rem;
+      }
     }
 
     .txt {
       width: 60%;
       color: $white;
+      @include media-breakpoint-down(md) {
+        width: 100%;
+        text-align: center;
+      }
 
       h2 {
         font-size: $font-size-base * 1.75;

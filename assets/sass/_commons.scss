@@ -16,13 +16,25 @@ p {
 .ttl2 {
   margin-bottom: $font-size-base * 1.5;
 
+  @include media-breakpoint-down(md) {
+    text-align: center;
+  }
+
   .en {
     font-size: $font-size-base * 1.8;
     margin-right: $font-size-base * 0.875;
+    @include media-breakpoint-down(md) {
+      display: block;
+      margin-right: 0;
+      margin-bottom: $font-size-base * .35;
+    }
   }
 
   span:not(.en) {
     font-size: $font-size-base * 0.875;
+    @include media-breakpoint-down(md) {
+      display: block;
+    }
   }
 }
 
@@ -51,7 +63,7 @@ p {
   font-size: $font-size-base * 1.025;
   font-weight: bold;
   box-sizing: border-box;
-  padding-left: .5em;
+  padding-left: 0.5em;
   margin-bottom: 1em;
   border-left: solid 3px $primary;
 }

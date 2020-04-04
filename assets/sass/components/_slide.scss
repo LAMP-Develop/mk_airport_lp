@@ -20,14 +20,21 @@
 
 .information-slide {
   margin-bottom: 0 !important;
+  @include media-breakpoint-down(md) {
+    padding: 0 $font-size-base * 2;
+  }
 
   .slick-slide {
     box-sizing: border-box;
     padding: 0 $font-size-base;
     font-size: 0;
+    @include media-breakpoint-down(md) {
+      padding: 0;
+    }
   }
 
   .slick-dots {
+    left: 0;
     bottom: -$font-size-base * 4;
   }
 
@@ -49,6 +56,9 @@
     left: -$font-size-base * 2;
     transform: rotate(-135deg) translateY(-50%);
     margin-top: -$font-size-base;
+    @include media-breakpoint-down(md) {
+      left: $font-size-base * 0.5;
+    }
   }
 
   .next-arrow {
@@ -56,8 +66,11 @@
     cursor: pointer;
     position: absolute;
     top: 50%;
-    right: -$font-size-base * 2;
+    right:- $font-size-base * 2;
     transform: rotate(45deg) translateY(-50%);
     margin-top: -$font-size-base * 0.5;
+    @include media-breakpoint-down(md) {
+      right: $font-size-base * 0.5;
+    }
   }
 }

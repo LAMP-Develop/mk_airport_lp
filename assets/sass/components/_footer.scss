@@ -6,6 +6,10 @@
     }
 
     .foot-links {
+      @include media-breakpoint-down(md) {
+        flex-wrap: wrap;
+      }
+
       h3 {
         font-size: $font-size-base;
         font-weight: bold;
@@ -37,6 +41,20 @@
           }
         }
       }
+    }
+  }
+}
+
+.socket {
+  @include media-breakpoint-down(md) {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  span,
+  div {
+    @include media-breakpoint-down(md) {
+      width: 100%;
     }
   }
 }

@@ -1,5 +1,9 @@
 .about-menu {
   margin-bottom: $font-size-base * 2;
+  @include media-breakpoint-down(md) {
+    flex-wrap: wrap;
+  }
+
   a {
     display: block;
     width: calc(100% / 6);
@@ -8,6 +12,9 @@
     border: solid 1px $white;
     font-size: $font-size-base * 0.875;
     line-height: 1;
+    @include media-breakpoint-down(md) {
+      width: 50%;
+    }
   }
 }
 
@@ -42,14 +49,25 @@
 }
 
 .prices {
+  @include media-breakpoint-down(md) {
+    flex-wrap: wrap;
+  }
+
   .txt {
     width: 60%;
     padding: 0 $font-size-base;
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      padding: 0;
+    }
   }
 
   .img {
     text-align: center;
     width: 40%;
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
   }
 }
 
@@ -65,6 +83,7 @@
     p {
       font-size: $font-size-base * 0.75;
       color: #707070;
+      margin-bottom: 0;
     }
   }
 }
