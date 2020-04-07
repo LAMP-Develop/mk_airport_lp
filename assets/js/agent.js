@@ -2,6 +2,7 @@ $(document).ready(function () {
   let logo = $('#agent-logo');
   let agent = get_param('agent');
   let referrer = document.referrer;
+  console.log('Referrer:'+referrer);
 
   if (agent != null) {
     logo.css('display', 'block');
