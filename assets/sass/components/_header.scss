@@ -2,7 +2,7 @@
   position: relative;
   padding: $font-size-base 0 $font-size-base * 1.25 0;
   @include media-breakpoint-down(md) {
-    padding: $font-size-base * 0.875 0;
+    padding: $font-size-sm 0;
   }
 
   h1 {
@@ -42,7 +42,7 @@
         vertical-align: middle;
         font-size: $font-size-base * 1.5;
         @include media-breakpoint-down(md) {
-          font-size: $font-size-base * 0.875;
+          font-size: $font-size-sm;
         }
       }
     }

@@ -10,7 +10,7 @@
     box-sizing: border-box;
     padding: 1em;
     border: solid 1px $white;
-    font-size: $font-size-base * 0.875;
+    font-size: $font-size-sm;
     line-height: 1;
     @include media-breakpoint-down(md) {
       width: 50%;
@@ -43,7 +43,7 @@
     }
 
     p {
-      font-size: $font-size-base * 0.875;
+      font-size: $font-size-sm;
     }
   }
 }

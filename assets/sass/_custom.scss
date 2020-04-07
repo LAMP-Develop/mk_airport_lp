@@ -11,3 +11,19 @@ $dark: #221816;
 
 /* font-size */
 $font-size-base: 1rem;
+
+/* btns */
+.btn {
+  position: relative;
+
+  &::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    content: '\f101';
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    transform: translateY(-50%);
+  }
+}

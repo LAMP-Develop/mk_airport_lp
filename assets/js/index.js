@@ -5,13 +5,26 @@ import '../sass/app.scss';
 import 'bootstrap';
 import 'slick-carousel';
 import 'lightbox2';
-
 FontAwesomeConfig = {
   searchPseudoElements: true
 };
 import '@fortawesome/fontawesome-free/js/all.js';
 
+import './agent';
+import './select';
+
 $(function ($) {
+  // スムーススクロール
+  $('.smooth').on('click', function () {
+    var speed = 500;
+    var href = $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $("html, body").animate({ scrollTop: position }, speed, "swing");
+    return false;
+  });
+
+  // slick
   $('.information-slide').slick({
     dots: true,
     infinite: true,
@@ -31,6 +44,7 @@ $(function ($) {
 $(window).on('load resize', function () {
   let width = $(window).width();
   let border = 991.98;
+  // 画像srcリプレース
   if (width < border) { // sp
     $('.toggle-img').each(function () {
       $(this).attr('src', $(this).attr('src').replace('_pc', '_sp'));

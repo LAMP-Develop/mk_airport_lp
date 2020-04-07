@@ -6,7 +6,7 @@ body {
 }
 
 p {
-  font-size: $font-size-base * 0.875;
+  font-size: $font-size-sm;
 }
 
 .sec {
@@ -22,7 +22,7 @@ p {
 
   .en {
     font-size: $font-size-base * 1.8;
-    margin-right: $font-size-base * 0.875;
+    margin-right: $font-size-sm;
     @include media-breakpoint-down(md) {
       display: block;
       margin-right: 0;
@@ -31,7 +31,7 @@ p {
   }
 
   span:not(.en) {
-    font-size: $font-size-base * 0.875;
+    font-size: $font-size-sm;
     @include media-breakpoint-down(md) {
       display: block;
     }

@@ -1,0 +1,58 @@
+#modal-cancelpolicy {
+  h4 {
+    font-size: $font-size-base;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 0.5em;
+    border-top: solid 1px #d5d5d5;
+    border-bottom: solid 1px #d5d5d5;
+  }
+
+  table {
+    th,
+    td {
+      font-size: 12px;
+    }
+
+    thead {
+      th {
+        background-color: $primary;
+        color: $white;
+        border: solid 1px $white;
+      }
+    }
+
+    tbody {
+      th {
+        background-color: #f0f7f6;
+        border: solid 1px $white;
+        white-space: nowrap;
+        vertical-align: middle;
+      }
+
+      td {
+        border: solid 1px #f0f7f6;
+      }
+    }
+  }
+
+  .tel {
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: 0.5em;
+    background-color: #f0f7f6;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: $font-size-sm;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    line-height: 1;
+
+    &::before {
+      content: "TEL";
+      margin-right: 0.5em;
+      padding-right: 0.5em;
+      border-right: solid 2px $dark;
+    }
+  }
+}
