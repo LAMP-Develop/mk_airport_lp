@@ -161,6 +161,16 @@ $(document).ready(function () {
           price.text('6,700');
         } else if (pickup_val == '大阪府') {
           price.text('3,700');
+        } else if (pickup_val == '兵庫県') {
+          price.text('3,800');
+        } else if (pickup_val == '奈良県') {
+          price.text('8,100');
+        } else if (pickup_val == '和歌山県') {
+          price.text('12,600');
+        } else if (pickup_val == '三重県') {
+          price.text('16,500');
+        } else if (pickup_val == '岡山県') {
+          price.text('22,400');
         }
       } else if (airport_val == 4) {
         if (pickup_val == '滋賀県') {
