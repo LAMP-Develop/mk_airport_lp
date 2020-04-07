@@ -1,7 +1,7 @@
 /* colors */
 $body-color: #000000;
-$primary: #154B97;
-$secondary: #98B9E6;
+$primary: #154b97;
+$secondary: #98b9e6;
 // $success: $green !default;
 // $info: $cyan !default;
 // $warning: $yellow !default;
@@ -16,11 +16,7 @@ $font-size-base: 1rem;
 .btn {
   position: relative;
 
-  &::after {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: '\f101';
-    -webkit-font-smoothing: antialiased;
+  .svg-inline--fa {
     position: absolute;
     top: 50%;
     right: 1em;
