@@ -30,6 +30,8 @@ $(function ($) {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
     prevArrow: '<span class="prev-arrow"></span>',
     nextArrow: '<span class="next-arrow"></span>',
     responsive: [{
