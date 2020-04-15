@@ -81,6 +81,11 @@ $(document).ready(function () {
           $('#mk-company').text('京都エムケイ');
           $('#mk-tel-num').attr('href', 'tel:075-555-3195');
           $('#mk-tel-num').children('span').text('075-555-3195');
+        } else if (pickup_val == '兵庫県') {
+          dom_company.val(company[6]); // 京都MK
+          $('#mk-company').text('神戸エムケイ');
+          $('#mk-tel-num').attr('href', 'tel:078-303-6001');
+          $('#mk-tel-num').children('span').text('078-303-6001');
         } else {
           dom_company.val(company[5]); // 大阪MK
           $('#mk-company').text('大阪エムケイ');
@@ -304,6 +309,9 @@ $(document).ready(function () {
       } else if (pickup_val == '和歌山県') {
         lat.val(34.2321244);
         lng.val(135.1889214);
+      } else if (pickup_val == '兵庫県') {
+        lat.val(34.6942584);
+        lng.val(135.1933112);
       } else if (pickup_val == '岡山県') {
         lat.val(34.6661256);
         lng.val(133.9155448);
