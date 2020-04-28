@@ -227,7 +227,7 @@ $(document).ready(function () {
         } else if (pickup_val == 'シーガイア') {
           price.text('43,000');
         }
-      } else if (airport_val == 8) {
+      } else if (airport_val == 9) {
         if (pickup_val == '東京都') {
           price.text('3,000');
         } else if (pickup_val == '神奈川県') {
@@ -237,7 +237,7 @@ $(document).ready(function () {
         } else if (pickup_val == '千葉県') {
           price.text('9,000');
         }
-      } else if (airport_val == 9) {
+      } else if (airport_val == 8) {
         if (pickup_val == '東京23区') {
           price.text('17,000');
         } else if (pickup_val == '武蔵野三鷹市') {
