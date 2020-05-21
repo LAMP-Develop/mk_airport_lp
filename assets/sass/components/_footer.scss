@@ -58,3 +58,41 @@
     }
   }
 }
+
+.totop {
+  overflow: hidden;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: $primary;
+  @include media-breakpoint-down(md) {
+    right: 1rem;
+  }
+  &::after {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    border-top: solid 2px $white;
+    border-right: solid 2px $white;
+  }
+  &::before {
+    content: "TOP";
+    color: $white;
+    position: absolute;
+    left: 0;
+    bottom: 0.5rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}

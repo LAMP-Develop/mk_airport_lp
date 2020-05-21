@@ -1,11 +1,12 @@
 $(document).ready(function () {
-  let logo = $('#agent-logo');
-  let agent = get_param('agent');
+  let logo = $("#agent-logo");
+  let agent = get_param("agent");
   let referrer = document.referrer;
-  console.log('Referrer:'+referrer);
+  console.log("Referrer:" + referrer);
 
   if (agent != null) {
-    logo.css('display', 'block');
+    logo.css("display", "block");
+    $(".meter-taxi, .sightseeing, .sky").css("display", "none");
   }
 });
 
@@ -24,7 +25,7 @@ function get_param(name, url) {
     return null;
   }
   if (!results[2]) {
-    return '';
+    return "";
   }
   return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
