@@ -6,7 +6,7 @@ $(document).ready(function () {
 
   if (agent != null) {
     logo.css("display", "block");
-    $(".meter-taxi, .sightseeing, .sky").css("display", "none");
+    $(".meter-taxi, .sightseeing, .sky, .cta").css("display", "none");
   }
 });
 
