@@ -309,6 +309,9 @@ $(document).ready(function () {
       } else if (pickup_val == '和歌山県') {
         lat.val(34.2321244);
         lng.val(135.1889214);
+      } else if (pickup_val == '大阪府') {
+        lat.val(34.7024898);
+        lng.val(135.4937619);
       } else if (pickup_val == '兵庫県') {
         lat.val(34.6942584);
         lng.val(135.1933112);
