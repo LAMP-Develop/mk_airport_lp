@@ -1,11 +1,24 @@
-$(document).ready(function () {
-  let logo = $("#agent-logo");
-  let agent = get_param("agent");
-  let referrer = document.referrer;
-  console.log("Referrer:" + referrer);
+const agent_arr = [
+  {
+    name: 'JAL',
+    src: './assets/images_min/logo_jal.png',
+  },
+  {
+    name: '',
+    src: '',
+  },
+  {
+    name: '楽天トラベル',
+    src: './assets/images_min/logo_rakuten.png',
+  },
+];
 
+$(function () {
+  let agent = get_param("agent");
   if (agent != null) {
-    logo.css("display", "block");
+    $("#agent-logo img").attr("src", agent_arr[(agent-1)]['src']);
+    $("#agent-logo img").attr("alt", agent_arr[(agent-1)]['name']);
+    $("#agent-logo").css("display", "block");
     $(".meter-taxi, .sightseeing, .sky, .cta").css("display", "none");
   }
 });

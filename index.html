@@ -2,28 +2,33 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta name="robots" content="noindex" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
     <title>MKタクシーWEB予約 | 空港送迎定額タクシー</title>
     <link rel="icon" href="./favicon.ico" sizes="32x32" />
     <link rel="apple-touch-icon-precomposed" href="./favicon.ico" />
     <!-- css -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" />
     <link rel="stylesheet" href="./assets/css/style.css?ver=1.0.2" />
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <!-- <script>
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(window, document, "script", "//www.google-analytics.com/analytics.js", "ga");
 
-      ga('create', 'UA-50145374-1', 'mk-group.co.jp');
-      ga('require', 'displayfeatures');
-      ga('send', 'pageview');
-    </script>
+      ga("create", "UA-50145374-1", "mk-group.co.jp");
+      ga("require", "displayfeatures");
+      ga("send", "pageview");
+    </script> -->
   </head>
 
   <body>
@@ -37,7 +42,7 @@
               <span class="badge badge-primary rounded-0 font-weight-bold">WEB予約</span>
             </span>
           </h1>
-          <span id="agent-logo" style="display: none;">
+          <span id="agent-logo" style="display: none">
             <img class="img-fluid" src="./assets/images_min/logo_jal.png" alt="JAL" />
           </span>
         </div>
@@ -46,9 +51,17 @@
     <nav class="global-nav">
       <div class="container">
         <ul class="global-menu d-flex justify-content-between align-items-center m-0 p-0">
-          <li class="active">空港送迎<br class="d-md-none d-block" />タクシー</li>
+          <li class="active">
+            空港送迎
+            <br class="d-md-none d-block" />
+            タクシー
+          </li>
           <li class="meter-taxi">
-            <span>メーター<br class="d-md-none d-block" />タクシー</span>
+            <span>
+              メーター
+              <br class="d-md-none d-block" />
+              タクシー
+            </span>
             <div class="sub-menu">
               <div class="link">
                 <a href="tel:0118604141">
@@ -157,7 +170,13 @@
             </div>
           </li>
           <li class="sky">
-            <a href="https://shuttle.mk-group.co.jp/index.html" target="_blank">乗合制空港<!--スカイゲイト--><br class="d-md-none d-block" />シャトル<i class="ml-1 small far fa-window-restore"></i></a>
+            <a href="https://shuttle.mk-group.co.jp/index.html" target="_blank">
+              乗合制空港
+              <!--スカイゲイト-->
+              <br class="d-md-none d-block" />
+              シャトル
+              <i class="ml-1 small far fa-window-restore"></i>
+            </a>
           </li>
         </ul>
       </div>
@@ -166,8 +185,12 @@
           <div class="d-md-flex justify-content-between align-items-center align-items-stretch">
             <form action="https://secure2.mk-group.co.jp/AirportTransferOrdering" method="GET">
               <div class="form-inner p-md-3 p-2 bg-white">
-                <div id="min-price" class="price text-center mb-4" style="display: none;">
-                  <p class="m-0 font-weight-bold bg-secondary">送迎料金<span class="bg-white price-val"></span>円〜</p>
+                <div id="min-price" class="price text-center mb-4" style="display: none">
+                  <p class="m-0 font-weight-bold bg-secondary">
+                    送迎料金
+                    <span class="bg-white price-val"></span>
+                    円〜
+                  </p>
                 </div>
                 <div class="select">
                   <div class="form-group row mx-0 align-items-center">
@@ -195,22 +218,32 @@
                     </div>
                   </div>
                 </div>
-                <div id="mk-tel" class="tel text-center" style="display: none;">
-                  <p class="small mb-0">ご選択のサービス会社は「<span id="mk-company"></span>」です。</p>
-                  <p class="mb-0"><a id="mk-tel-num" class="text-body font-weight-bold small" href="">TEL<span class="ml-1 text-primary h5 font-weight-bold"></span></a></p>
+                <div id="mk-tel" class="tel text-center" style="display: none">
+                  <p class="small mb-0">
+                    ご選択のサービス会社は「
+                    <span id="mk-company"></span>
+                    」です。
+                  </p>
+                  <p class="mb-0">
+                    <a id="mk-tel-num" class="text-body font-weight-bold small" href="">
+                      TEL
+                      <span class="ml-1 text-primary h5 font-weight-bold"></span>
+                    </a>
+                  </p>
                 </div>
                 <div class="mt-3">
                   <button class="btn btn-primary btn-lg w-100 rounded-0" type="submit">
-                    予約に進む<i class="fas fa-angle-double-right"></i>
+                    予約に進む
+                    <i class="fas fa-angle-double-right"></i>
                   </button>
                 </div>
               </div>
               <div class="cancel bg-light p-md-3 p-2">
                 <p class="m-0 text-center">
-                  <a
-                    class="btn btn-outline-primary btn-sm w-100 rounded-0"
-                    href="https://secure2.mk-group.co.jp/AirportTransferOrdering/SendReservationMail"
-                    target="_blank">ご予約の確認・キャンセル<i class="fas fa-angle-double-right"></i></a>
+                  <a class="btn btn-outline-primary btn-sm w-100 rounded-0" href="https://secure2.mk-group.co.jp/AirportTransferOrdering/SendReservationMail" target="_blank">
+                    ご予約の確認・キャンセル
+                    <i class="fas fa-angle-double-right"></i>
+                  </a>
                 </p>
               </div>
               <input id="company" name="company" type="hidden" value="" />
@@ -226,6 +259,20 @@
     </nav>
     <main>
       <section id="information" class="sec">
+        <!--        <div class="container">
+          <h2 class="ttl2">
+            <span class="text-primary en">新着情報</span>
+          </h2>
+            <p>【2020.07.31】<a href="https://www.mk-group.co.jp/2020support/index.html">MK新聞に記載のキャンペーンについて延期のお知らせ</a></p>
+            <p>【2020.07.30】<a href="https://www.mk-group.co.jp/travel/2020photo_train.html">MKトラベル「鉄道写真家清水薫先生追悼写真展ツアー」</a></p>
+            <p>【2020.07.27】<a href="https://www.mk-group.co.jp/about/release.html">京都MK八幡営業所における新型ウイルス感染者の発生について</a></p>
+            <p>【2020.07.21】<a href="https://www.mk-group.co.jp/travel/robotabitaxi/index.html#Schedule">MKトラベル京のロボ旅タクシー特別ツアー2020年度開催スケジュールを掲載</a></p>
+            <p>【2020.07.21】<a href="https://www.mk-group.co.jp/travel/2020tottori_nashi.html">MKトラベル「お土産付き!!鳥取で梨狩り食べ放題日帰りバスツアー」</a></p>
+            <p>【2020.07.17】<a href="https://www.mk-group.co.jp/travel/2020nekotour.html">MKトラベル「京都にゃんこぱらだいす」MKタクシーで巡る猫ツアー</a></p>
+            <p>→　お知らせ一覧は <a href="https://www.mk-group.co.jp/about/news/">こちら</a> をご覧ください。</p>
+          <p><font color="red">※現在サーバー不具合につき一部ブラウザでコーポレートサイトが正常に表示されない場合がございます。ご不便をおかけし申し訳ございません。</font>
+          <br><a href="https://www.mk-group.co.jp/top.html" target="_blank"><img src="./assets/images_min/im_corporate.png" width="100%" alt="コーポレートサイトはこちら" /></a></p>            
+        </div>-->
         <div class="container">
           <h2 class="ttl2">
             <span class="text-primary en">Information</span>
@@ -235,27 +282,30 @@
         <div class="bg-light py-4">
           <div class="container">
             <div class="information-slide">
-              <a href="https://www.mk-group.co.jp/airport/" target="_blank">
+              <!--              <a href="https://www.mk-group.co.jp/airport/" target="_blank">
                 <img class="img-fluid" src="./assets/images_min/slide_cp200619.png" alt="全国8空港共通空港定額タクシーキャンペーン" />
+              </a>-->
+              <a href="https://www.mk-group.co.jp/airport/" target="_blank">
+                <img class="img-fluid" src="./assets/images_min/201101airport_cp_secure.jpg" alt="全国8空港共通空港定額タクシーキャンペーン" />
               </a>
-              <!-- <a href="./assets/images_min/slide_01.png" data-lightbox="info-slide">
+              <a href="./assets/images_min/slide_01.png" data-lightbox="info-slide">
                 <img class="img-fluid" src="./assets/images_min/slide_01.png" alt="空港定額タクシーのご紹介1" />
-              </a> -->
+              </a>
               <a href="./assets/images_min/slide_02.png" data-lightbox="info-slide">
                 <img class="img-fluid" src="./assets/images_min/slide_02.png" alt="空港定額タクシーのご紹介2" />
               </a>
-              <a href="./assets/images_min/slide_03.png" data-lightbox="info-slide">
+              <!--              <a href="./assets/images_min/slide_03.png" data-lightbox="info-slide">
                 <img class="img-fluid" src="./assets/images_min/slide_03.png" alt="空港定額タクシーのご紹介3" />
-              </a>
-              <a href="https://www.mk-group.co.jp/airport/" target="_blank">
+              </a>-->
+              <!--              <a href="https://www.mk-group.co.jp/airport/" target="_blank">
                 <img class="img-fluid" src="./assets/images_min/slide_cp200619.png" alt="全国8空港共通空港定額タクシーキャンペーン" />
-              </a>
-              <a href="./assets/images_min/slide_04.png" data-lightbox="info-slide">
+              </a>-->
+              <!--              <a href="./assets/images_min/slide_04.png" data-lightbox="info-slide">
                 <img class="img-fluid" src="./assets/images_min/slide_04.png" alt="空港定額タクシーのご紹介4" />
-              </a>
-              <a href="./assets/images_min/slide_05.png" data-lightbox="info-slide">
+              </a>-->
+              <!--              <a href="./assets/images_min/slide_05.png" data-lightbox="info-slide">
                 <img class="img-fluid" src="./assets/images_min/slide_05.png" alt="空港定額タクシーのご紹介5" />
-              </a>
+              </a>-->
             </div>
           </div>
         </div>
@@ -342,11 +392,16 @@
                 </div>
                 <div class="txt">
                   <p>各主要空港 ⇔ ご自宅・ホテル・駅・旅先などご指定場所まで、お得な定額運賃で直行します!!</p>
-                  <p class="mb-0 small">※「送迎先1ヵ所⇔空港」の直行便となります。立ち寄りがある場合は定額適用外となります。
-                    <br />※高速道路などの有料道路通行料がかかります。
-                    <br />※ビジネス、ジャンボ等の車種を指定する場合は、車種指定料金がかります。
-                    <br />※空港お迎えご利用時は駐車代がかかります。
-                    <br />※深夜早朝時間帯(22:00~翌5:00)は割増運賃(2割増)となります。
+                  <p class="mb-0 small">
+                    ※「送迎先1ヵ所⇔空港」の直行便となります。立ち寄りがある場合は定額適用外となります。
+                    <br />
+                    ※高速道路などの有料道路通行料がかかります。
+                    <br />
+                    ※ビジネス、ジャンボ等の車種を指定する場合は、車種指定料金がかります。
+                    <br />
+                    ※空港お迎えご利用時は駐車代がかかります。
+                    <br />
+                    ※深夜早朝時間帯(22:00~翌5:00)は割増運賃(2割増)となります。
                     <!-- <br>※ 大阪MK・神戸MKは、時間指定予約料金として500円がかかります。
                   <br>※名古屋MKは、時間指定予約料金として200円がかかります。 -->
                   </p>
@@ -367,7 +422,11 @@
                   <div class="card border-0">
                     <div class="card-body">
                       <h4 class="card-title text-primary">スタンダード</h4>
-                      <p class="card-text">カムリ・クラウン<br />定員4名</p>
+                      <p class="card-text">
+                        カムリ・クラウン
+                        <br />
+                        定員4名
+                      </p>
                       <div class="text-center">
                         <img class="img-fluid w-100" src="./assets/images_min/car_camry.png" alt="カムリ・クラウン" />
                       </div>
@@ -378,7 +437,11 @@
                   <div class="card border-0">
                     <div class="card-body">
                       <h4 class="card-title text-primary">ビジネス</h4>
-                      <p class="card-text">クラウンHV 定員4名<br />アルファードHV 定員5名〜6名</p>
+                      <p class="card-text">
+                        クラウンHV 定員4名
+                        <br />
+                        アルファードHV 定員5名〜6名
+                      </p>
                       <div class="text-center d-flex justify-content-center flex-nowrap">
                         <div>
                           <img class="img-fluid w-100" src="./assets/images_min/car_crown.png" alt="クラウンHV" />
@@ -394,7 +457,11 @@
                   <div class="card border-0">
                     <div class="card-body">
                       <h4 class="card-title text-primary">ジャンボ</h4>
-                      <p class="card-text">ハイエース<br />定員9名</p>
+                      <p class="card-text">
+                        ハイエース
+                        <br />
+                        定員9名
+                      </p>
                       <div class="text-center">
                         <img class="img-fluid w-100" src="./assets/images_min/car_high.png" alt="ハイエース" />
                       </div>
@@ -402,7 +469,9 @@
                   </div>
                 </div>
               </div>
-              <p class="mb-0 mt-3 small">上記は、ご利用いただける主な車種となっております。ご利用地域により、車種は少々異なります。ご予約時の車種選定でご確認ください。車種により、乗車人数とスーツケースの積載条件が変わります。ご利用人数とご利用荷物に応じた車種をご選定ください。</p>
+              <p class="mb-0 mt-3 small">
+                上記は、ご利用いただける主な車種となっております。ご利用地域により、車種は少々異なります。ご予約時の車種選定でご確認ください。車種により、乗車人数とスーツケースの積載条件が変わります。ご利用人数とご利用荷物に応じた車種をご選定ください。
+              </p>
             </div>
           </div>
           <div id="baggage" class="about-inner bg-light">
@@ -420,9 +489,13 @@
                   <div>
                     <img class="img-fluid toggle-img" src="./assets/images_min/bag_table_pc.png" alt="積載" />
                   </div>
-                  <p class="small mb-0 mt-3">※トランクに入りきらないお荷物は、足元に置かせていただく場合がございます。
-                    <br>※東京、京都地域では、アルファードは6名様2個までとなります。ご指定の車種に応じて、ご乗車人数と荷物の積載条件が変わります。お荷物はスーツケース(90L)サイズのものを想定しておりおます。ご乗車人数とお荷物をよく確認ください。
-                    <br>不明な点はコールセンターまたはメールでお問い合わせください。</p>
+                  <p class="small mb-0 mt-3">
+                    ※トランクに入りきらないお荷物は、足元に置かせていただく場合がございます。
+                    <br />
+                    ※東京、京都地域では、アルファードは6名様2個までとなります。ご指定の車種に応じて、ご乗車人数と荷物の積載条件が変わります。お荷物はスーツケース(90L)サイズのものを想定しておりおます。ご乗車人数とお荷物をよく確認ください。
+                    <br />
+                    不明な点はコールセンターまたはメールでお問い合わせください。
+                  </p>
                 </div>
               </div>
             </div>
@@ -435,14 +508,17 @@
               </h3>
             </div>
             <div class="content">
-              <p class="mb-5">空港お迎えの場合、下記のお迎え場所までお越しくださいますようお願いたします。ご利用地域の会社名をご選択ください。
-                <br>また、お客様名を書いたステッカーをお持ちし、到着口出口にてお迎えも可能です。地域によって「ミートサービス料」がかかります。ご予約時にオプションの「ミートサービス」をご選択ください。</p>
+              <p class="mb-5">
+                空港お迎えの場合、下記のお迎え場所までお越しくださいますようお願いたします。ご利用地域の会社名をご選択ください。
+                <br />
+                また、お客様名を書いたステッカーをお持ちし、到着口出口にてお迎えも可能です。地域によって「ミートサービス料」がかかります。ご予約時にオプションの「ミートサービス」をご選択ください。
+              </p>
               <!-- 札幌MK -->
               <div class="faq__list__inner contact__list">
                 <h4 data-toggle="collapse" href="#terminal1">札幌MK</h4>
                 <div id="terminal1" class="collapse faq__list__inner__ans row">
                   <div class="col-md mb-md-0 mb-3 px-md-3 px-0">
-                    <img class="img-fluid" src="./assets/images_min/terminal_chitose.png" alt="新千歳空港">
+                    <img class="img-fluid" src="./assets/images_min/terminal_chitose.png" alt="新千歳空港" />
                   </div>
                 </div>
               </div>
@@ -452,19 +528,19 @@
                 <div id="terminal2" class="collapse faq__list__inner__ans">
                   <div class="row">
                     <div class="col-md mb-md-0 mb-3 px-md-3 px-0">
-                      <img class="img-fluid" src="./assets/images_min/terminal_haneda.jpg" alt="羽田">
+                      <img class="img-fluid" src="./assets/images_min/terminal_haneda.jpg" alt="羽田" />
                       <p class="mb-0 mt-2">※羽田空港第一ターミナル、第二ターミナルにつきましては当日お電話でご案内させていただきます</p>
                     </div>
                     <div class="col-md mb-md-0 mb-3 px-md-3 px-0">
-                      <img class="img-fluid" src="./assets/images_min/terminal_narita_1.jpg" alt="成田">
+                      <img class="img-fluid" src="./assets/images_min/terminal_narita_1.jpg" alt="成田" />
                     </div>
                   </div>
                   <div class="row mt-md-4">
                     <div class="col-md mb-md-0 mb-3 px-md-3 px-0">
-                      <img class="img-fluid" src="./assets/images_min/terminal_narita_3.jpg" alt="成田">
+                      <img class="img-fluid" src="./assets/images_min/terminal_narita_3.jpg" alt="成田" />
                     </div>
                     <div class="col-md mb-md-0 mb-3 px-md-3 px-0">
-                      <img class="img-fluid" src="./assets/images_min/terminal_narita_2.jpg" alt="成田">
+                      <img class="img-fluid" src="./assets/images_min/terminal_narita_2.jpg" alt="成田" />
                     </div>
                   </div>
                 </div>
@@ -475,7 +551,7 @@
                 <div id="terminal3" class="collapse faq__list__inner__ans">
                   <div class="row">
                     <div class="col-md mb-md-0 mb-3 px-md-3 px-0">
-                      <img class="img-fluid" src="./assets/images_min/terminal_centrair.png" alt="セントレア">
+                      <img class="img-fluid" src="./assets/images_min/terminal_centrair.png" alt="セントレア" />
                     </div>
                   </div>
                 </div>
@@ -486,25 +562,25 @@
                 <div id="terminal４" class="collapse faq__list__inner__ans">
                   <div class="row">
                     <div class="col-md-6 mb-md-0 mb-3 px-md-3 px-0">
-                      <img class="img-fluid" src="./assets/images_min/terminal_centrair.png" alt="セントレア">
+                      <img class="img-fluid" src="./assets/images_min/terminal_centrair.png" alt="セントレア" />
                     </div>
                   </div>
                   <div class="row mt-md-4">
                     <div class="col-md mb-md-0 mb-3 px-md-3 px-0">
-                      <img class="img-fluid" src="./assets/images_min/terminal_itami_1.png" alt="伊丹">
+                      <img class="img-fluid" src="./assets/images_min/terminal_itami_1.png" alt="伊丹" />
                       <p class="mb-0 mt-2">※ミートサービス選択時</p>
                     </div>
                     <div class="col-md mb-md-0 mb-3 px-md-3 px-0">
-                      <img class="img-fluid" src="./assets/images_min/terminal_itami_2.png" alt="伊丹">
+                      <img class="img-fluid" src="./assets/images_min/terminal_itami_2.png" alt="伊丹" />
                     </div>
                   </div>
                   <div class="row mt-md-4">
                     <div class="col-md mb-md-0 mb-3 px-md-3 px-0">
-                      <img class="img-fluid" src="./assets/images_min/terminal_kanku_1.png" alt="関空">
+                      <img class="img-fluid" src="./assets/images_min/terminal_kanku_1.png" alt="関空" />
                       <p class="mb-0 mt-2">※ミートサービス選択時</p>
                     </div>
                     <div class="col-md mb-md-0 mb-3 px-md-3 px-0">
-                      <img class="img-fluid w-100" src="./assets/images_min/terminal_kanku_2.png" alt="関空">
+                      <img class="img-fluid w-100" src="./assets/images_min/terminal_kanku_2.png" alt="関空" />
                     </div>
                   </div>
                 </div>
@@ -515,15 +591,15 @@
                 <div id="terminal5" class="collapse faq__list__inner__ans">
                   <div class="row">
                     <div class="col-md mb-md-0 mb-3 px-md-3 px-0">
-                      <img class="img-fluid" src="./assets/images_min/terminal_itami_1.png" alt="伊丹">
+                      <img class="img-fluid" src="./assets/images_min/terminal_itami_1.png" alt="伊丹" />
                     </div>
                     <div class="col-md mb-md-0 mb-3 px-md-3 px-0">
-                      <img class="img-fluid" src="./assets/images_min/terminal_kanku_1.png" alt="関空">
+                      <img class="img-fluid" src="./assets/images_min/terminal_kanku_1.png" alt="関空" />
                     </div>
                   </div>
                   <div class="row mt-md-4">
                     <div class="col-md-6 px-md-3 px-0">
-                      <img class="img-fluid" src="./assets/images_min/terminal_kobe.png" alt="神戸">
+                      <img class="img-fluid" src="./assets/images_min/terminal_kobe.png" alt="神戸" />
                     </div>
                   </div>
                 </div>
@@ -534,10 +610,10 @@
                 <div id="terminal6" class="collapse faq__list__inner__ans">
                   <div class="row">
                     <div class="col-md-6 px-md-3 px-0">
-                      <img class="img-fluid" src="./assets/images_min/terminal_hukuoka_1.jpg" alt="福岡">
+                      <img class="img-fluid" src="./assets/images_min/terminal_hukuoka_1.jpg" alt="福岡" />
                     </div>
                     <div class="col-md-6 px-md-3 px-0">
-                      <img class="img-fluid" src="./assets/images_min/terminal_hukuoka_2.jpg" alt="福岡">
+                      <img class="img-fluid" src="./assets/images_min/terminal_hukuoka_2.jpg" alt="福岡" />
                     </div>
                   </div>
                 </div>
@@ -553,8 +629,13 @@
             </div>
             <div class="content">
               <p class="m-0">
-                ご予約をキャンセルされる場合は、ページトップの<a class="smooth" href="#">ご予約確認・キャンセルボタン</a>を押してください。ご予約日の前日17時迄、キャンセル料は発生いたしません。当日のキャンセルについては、ご利用地域・車種毎にキャンセル規定が異なります。
-                <br />詳しくは<a href="#" data-toggle="modal" data-target="#modal-cancelpolicy">キャンセルポリシー一覧</a>を開いてご確認ください。
+                ご予約をキャンセルされる場合は、ページトップの
+                <a class="smooth" href="#">ご予約確認・キャンセルボタン</a>
+                を押してください。ご予約日の前日17時迄、キャンセル料は発生いたしません。当日のキャンセルについては、ご利用地域・車種毎にキャンセル規定が異なります。
+                <br />
+                詳しくは
+                <a href="#" data-toggle="modal" data-target="#modal-cancelpolicy">キャンセルポリシー一覧</a>
+                を開いてご確認ください。
               </p>
             </div>
           </div>
@@ -572,9 +653,13 @@
               <h4 class="text-primary">渋滞等でフライト時刻に間に合わない恐れがある場合</h4>
               <p>空港発便の場合は、到着には余裕をもってお送り時間をご指定ください。渋滞等でフライト時刻に間に合わない可能性がある場合は、最寄り駅にお送りするかご相談させていただきます。</p>
               <h4 class="text-primary">航空便の延着/早着の場合</h4>
-              <p>お迎えのサービスは、飛行機到着時刻に合わせてお迎えいたします。ご利用航空便が大幅に延着した場合、自動キャンセルさせていただく場合がございます。また、早着の場合は、空港にてお待ちいただくことがございます。</p>
+              <p>
+                お迎えのサービスは、飛行機到着時刻に合わせてお迎えいたします。ご利用航空便が大幅に延着した場合、自動キャンセルさせていただく場合がございます。また、早着の場合は、空港にてお待ちいただくことがございます。
+              </p>
               <h4 class="text-primary">関空お迎えの時間指定について</h4>
-              <p class="mb-0">関西国際空港でのお迎え希望時刻は、タクシーのレーン進入制限のため、国際線は、飛行機到着時刻の40分後以降、国内線は飛行機到着時刻の20分後以降のご指定をお願いします。それより早い時刻をご指定いただいても予約車レーンに進入できないためお待ちいただくこととなりますのでご注意ください。</p>
+              <p class="mb-0">
+                関西国際空港でのお迎え希望時刻は、タクシーのレーン進入制限のため、国際線は、飛行機到着時刻の40分後以降、国内線は飛行機到着時刻の20分後以降のご指定をお願いします。それより早い時刻をご指定いただいても予約車レーンに進入できないためお待ちいただくこととなりますのでご注意ください。
+              </p>
             </div>
           </div>
           <div id="faq" class="about-inner bg-light">
@@ -586,20 +671,34 @@
             <div class="content faq__list">
               <div class="faq__list__inner">
                 <h4 data-toggle="collapse" href="#faq1">どのような車種があるか</h4>
-                <div id="faq1" class="collapse faq__list__inner__ans">セダンタイプのクラウン、バンタイプのアルファード、またジャンボタクシーなど、人数や荷物量等に合わせた車両をご用意しております。
-                  <br />ご用意している車種は<a class="smooth" href="#cars">こちらをクリック</a>してご参照ください。
-                  <br />地域によりご利用いただける車種が異なります。ご予約時に選択表示されます。
+                <div id="faq1" class="collapse faq__list__inner__ans">
+                  セダンタイプのクラウン、バンタイプのアルファード、またジャンボタクシーなど、人数や荷物量等に合わせた車両をご用意しております。
+                  <br />
+                  ご用意している車種は
+                  <a class="smooth" href="#cars">こちらをクリック</a>
+                  してご参照ください。
+                  <br />
+                  地域によりご利用いただける車種が異なります。ご予約時に選択表示されます。
                 </div>
               </div>
               <div class="faq__list__inner">
                 <h4 data-toggle="collapse" href="#faq2">予約はいつまで可能か</h4>
-                <div id="faq2" class="collapse faq__list__inner__ans">WEB予約は、ご利用日の前日17：00迄受け付けております。<br />前日17時以降のご予約は、コールセンターへ電話予約をお願いします。</div>
+                <div id="faq2" class="collapse faq__list__inner__ans">
+                  WEB予約は、ご利用日の前日17：00迄受け付けております。
+                  <br />
+                  前日17時以降のご予約は、コールセンターへ電話予約をお願いします。
+                </div>
               </div>
               <div class="faq__list__inner">
                 <h4 data-toggle="collapse" href="#faq3">荷物はどのぐらいつめるか</h4>
-                <div id="faq3" class="collapse faq__list__inner__ans">車種により、乗車人数と荷物の積載条件が変わります。
-                  <br />詳しくは、<a class="smooth" href="#baggage">こちらをクリック</a>してご参照ください。
-                  <br />乗車人数により荷物が入りきらない場合は複数台のご予約をお願いします。
+                <div id="faq3" class="collapse faq__list__inner__ans">
+                  車種により、乗車人数と荷物の積載条件が変わります。
+                  <br />
+                  詳しくは、
+                  <a class="smooth" href="#baggage">こちらをクリック</a>
+                  してご参照ください。
+                  <br />
+                  乗車人数により荷物が入りきらない場合は複数台のご予約をお願いします。
                 </div>
               </div>
               <div class="faq__list__inner">
@@ -608,9 +707,12 @@
               </div>
               <div class="faq__list__inner">
                 <h4 data-toggle="collapse" href="#faq5">エリア外は対応可能か</h4>
-                <div id="faq5" class="collapse faq__list__inner__ans">東京地域では、定額エリア外（世田谷区、大田区等）のメータータクシーによるご送迎をWEB受付しております。
-                  <br />その他の地域は、エリア内まで別途メーター料金を頂戴し、エリア内に入った時点で定額料金に切り替え、お支払の際にメーター料金と空港定額料金をお支払頂きます。
-                  <br />その他不明な点はコールセンターまでお問い合わせください。
+                <div id="faq5" class="collapse faq__list__inner__ans">
+                  東京地域では、定額エリア外（世田谷区、大田区等）のメータータクシーによるご送迎をWEB受付しております。
+                  <br />
+                  その他の地域は、エリア内まで別途メーター料金を頂戴し、エリア内に入った時点で定額料金に切り替え、お支払の際にメーター料金と空港定額料金をお支払頂きます。
+                  <br />
+                  その他不明な点はコールセンターまでお問い合わせください。
                 </div>
               </div>
             </div>
@@ -623,26 +725,60 @@
             </div>
             <div class="content faq__list">
               <div class="faq__list__inner contact__list">
-                <h4 data-toggle="collapse" href="#contact1">メールによるお問い合わせ<span class="small text-muted">（前日の予約はお電話ください）</span></h4>
-                <div id="contact1" class="collapse faq__list__inner__ans">年中無休 24時間
-                  <br>札幌：<a href="mailto:sapporo-call@mk-group.jp">sapporo-call@mk-group.jp</a>
-                  <br>東京：<a href="mailto:taxi@tokyomk.com">taxi@tokyomk.com</a>
-                  <br>名古屋：<a href="mailto:nagoya.cc@mk-group.jp">nagoya.cc@mk-group.jp</a>
-                  <br>京都・滋賀：<a href="mailto:teigaku.taxi@mk-group.jp">teigaku.taxi@mk-group.jp</a>
-                  <br>大阪・神戸：<a href="mailto:kobe-call@mk-group.co.jp">kobe-call@mk-group.co.jp</a>
-                  <br>福岡：<a href="mailto:kobe-call@mk-group.co.jp">kobe-call@mk-group.co.jp</a>
+                <h4 data-toggle="collapse" href="#contact1">
+                  メールによるお問い合わせ
+                  <span class="small text-muted">（前日の予約はお電話ください）</span>
+                </h4>
+                <div id="contact1" class="collapse faq__list__inner__ans">
+                  年中無休 24時間
+                  <br />
+                  札幌：
+                  <a href="mailto:sapporo-call@mk-group.jp">sapporo-call@mk-group.jp</a>
+                  <br />
+                  東京：
+                  <a href="mailto:taxi@tokyomk.com">taxi@tokyomk.com</a>
+                  <br />
+                  名古屋：
+                  <a href="mailto:nagoya.cc@mk-group.jp">nagoya.cc@mk-group.jp</a>
+                  <br />
+                  京都・滋賀：
+                  <a href="mailto:teigaku.taxi@mk-group.jp">teigaku.taxi@mk-group.jp</a>
+                  <br />
+                  大阪・神戸：
+                  <a href="mailto:kobe-call@mk-group.co.jp">kobe-call@mk-group.co.jp</a>
+                  <br />
+                  福岡：
+                  <a href="mailto:kobe-call@mk-group.co.jp">kobe-call@mk-group.co.jp</a>
                 </div>
               </div>
               <div class="faq__list__inner contact__list">
-                <h4 data-toggle="collapse" href="#contact2">電話によるお問い合わせ<span class="small text-muted">（前日の予約はお電話ください）</span></h4>
-                <div id="contact2" class="collapse faq__list__inner__ans">年中無休 24時間
-                  <br>札幌：<a href="tel:011-777-5058">011-777-5058</a>
-                  <br>東京：<a href="tel:03-5547-5551">03-5547-5551</a>
-                  <br>名古屋：<a href="tel:052-913-8001">052-913-8001</a>
-                  <br>滋賀：<a href="tel:077-526-4141">077-526-4141</a>
-                  <br>京都：<a href="tel:075-555-3195">075-555-3195</a>
-                  <br>大阪・神戸：<a href="tel:06-6452-4441">06-6452-4441</a>
-                  <br>福岡：<a href="tel:092-713-2229">092-713-2229</a>
+                <h4 data-toggle="collapse" href="#contact2">
+                  電話によるお問い合わせ
+                  <span class="small text-muted">（前日の予約はお電話ください）</span>
+                </h4>
+                <div id="contact2" class="collapse faq__list__inner__ans">
+                  年中無休 24時間
+                  <br />
+                  札幌：
+                  <a href="tel:011-777-5058">011-777-5058</a>
+                  <br />
+                  東京：
+                  <a href="tel:03-5547-5551">03-5547-5551</a>
+                  <br />
+                  名古屋：
+                  <a href="tel:052-913-8001">052-913-8001</a>
+                  <br />
+                  滋賀：
+                  <a href="tel:077-526-4141">077-526-4141</a>
+                  <br />
+                  京都：
+                  <a href="tel:075-555-3195">075-555-3195</a>
+                  <br />
+                  大阪・神戸：
+                  <a href="tel:06-6452-4441">06-6452-4441</a>
+                  <br />
+                  福岡：
+                  <a href="tel:092-713-2229">092-713-2229</a>
                 </div>
               </div>
             </div>
@@ -656,7 +792,11 @@
               <img class="img-fluid" src="./assets/images_min/apply_img.png" alt="「MKスマホ配車」でいつでも配車" />
             </div>
             <div class="txt">
-              <h2>「MKスマホ配車」<br class="d-md-none d-block" />でいつでも配車</h2>
+              <h2>
+                「MKスマホ配車」
+                <br class="d-md-none d-block" />
+                でいつでも配車
+              </h2>
               <p>スマホアプリからだから電話の必要なし！</p>
               <div class="btns">
                 <a href="https://play.google.com/store/apps/details?id=jp.co.mk_group.smart.Main" target="_blank">
@@ -691,7 +831,7 @@
                     <li><a href="https://www.tokyomk.com/" target="_blank">東京MK</a></li>
                     <li><a href="https://www.mk-group.co.jp/nagoya/" target="_blank">名古屋MK</a></li>
                     <li><a href="https://www.mk-group.co.jp/shiga/" target="_blank">滋賀MK</a></li>
-                    <li><a href="https://www.mk-group.co.jp/" target="_blank">京都MK</a></li>
+                    <li><a href="https://www.mk-group.co.jp/top.html" target="_blank">京都MK</a></li>
                     <li><a href="https://www.mk-group.co.jp/osaka/" target="_blank">大阪MK</a></li>
                     <li><a href="https://www.mk-group.co.jp/kobe/" target="_blank">神戸MK</a></li>
                     <li><a href="https://www.mk-group.co.jp/fukuoka/" target="_blank">福岡MK</a></li>
@@ -701,7 +841,12 @@
                   <h3>その他</h3>
                   <ul>
                     <li><a href="https://www.mk-group.co.jp/kyoto/tw_airport.html" target="_blank">台湾（提携）</a></li>
-                    <li><a href="https://shuttle.mk-group.co.jp/index.html" target="_blank">乗合制空港シャトル<!--スカイゲイトシャトル--></a></li>
+                    <li>
+                      <a href="https://shuttle.mk-group.co.jp/index.html" target="_blank">
+                        乗合制空港シャトル
+                        <!--スカイゲイトシャトル-->
+                      </a>
+                    </li>
                     <li><a href="https://www.mk-group.co.jp/kyoto/u_teigaku.html" target="_blank">USJ/海遊館定額送迎</a></li>
                   </ul>
                 </div>
@@ -719,14 +864,7 @@
     </footer>
 
     <!-- modal -->
-    <div
-      id="modal-meter-taxi"
-      class="modal fade"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="modal-meter-taxi"
-      aria-hidden="true"
-    >
+    <div id="modal-meter-taxi" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-meter-taxi" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -798,14 +936,7 @@
         </div>
       </div>
     </div>
-    <div
-      id="modal-sightseeing"
-      class="modal fade"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="modal-sightseeing"
-      aria-hidden="true"
-    >
+    <div id="modal-sightseeing" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-sightseeing" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content sightseeing">
           <div class="modal-header">
@@ -858,14 +989,7 @@
         </div>
       </div>
     </div>
-    <div
-      id="modal-cancelpolicy"
-      class="modal fade"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="modal-cancelpolicy"
-      aria-hidden="true"
-    >
+    <div id="modal-cancelpolicy" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-cancelpolicy" aria-hidden="true">
       <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
           <div class="modal-header border-0">
@@ -1038,8 +1162,9 @@
                   </tbody>
                 </table>
                 <p class="small">
-                  上記＜普通車・アルファード＞の場合<br />＜ジャンボ＞前日17時迄0％ /
-                  空港→京都の17時以降のみ100％+往復通行料・駐車料金
+                  上記＜普通車・アルファード＞の場合
+                  <br />
+                  ＜ジャンボ＞前日17時迄0％ / 空港→京都の17時以降のみ100％+往復通行料・駐車料金
                 </p>
                 <p class="mb-0 tel">077-526-4141</p>
               </div>
@@ -1081,8 +1206,9 @@
                   </tbody>
                 </table>
                 <p class="small">
-                  上記＜普通車・ミニバン・アルファード・BMW＞の場合<br />＜ジャンボ＞前日17時迄0％ /
-                  空港→京都の17時以降のみ100％+往復通行料･駐車料金
+                  上記＜普通車・ミニバン・アルファード・BMW＞の場合
+                  <br />
+                  ＜ジャンボ＞前日17時迄0％ / 空港→京都の17時以降のみ100％+往復通行料･駐車料金
                 </p>
                 <p class="mb-0 tel">075-555-3195</p>
               </div>
