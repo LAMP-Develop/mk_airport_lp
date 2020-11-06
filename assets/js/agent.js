@@ -11,6 +11,10 @@ const agent_arr = [
     name: '楽天トラベル',
     src: './assets/images_min/logo_rakuten.png',
   },
+  {
+    name: 'peach',
+    src: './assets/images_min/logo_peach.png',
+  },
 ];
 
 $(function () {
